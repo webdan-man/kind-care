@@ -110,10 +110,6 @@ body {
   font-size: 52px;
 }
 
-.hero {
-  background-image: url("/hero.jpg");
-}
-
 .h1 {
   font-weight: 600;
   font-size: 40px;
@@ -147,13 +143,6 @@ body {
 .h7 {
   font-weight: 500;
   font-size: 20px;
-}
-
-.how-we-work {
-  background-image: url("/vector.png");
-  background-position: left 333px;
-  background-repeat: no-repeat;
-  /*background-size: contain;*/
 }
 
 input {

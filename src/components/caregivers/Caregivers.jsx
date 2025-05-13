@@ -5,7 +5,7 @@ export default function Caregivers() {
         <div className="w-full max-w-[1440px] px-[16px] mx-auto flex flex-col items-center mb-[148px] mt-[48px]">
             <div className="flex flex-row gap-[70px]">
                 <Image
-                    src="/caregiver.png"
+                    src="/home/caregiver.png"
                     alt="caregiver"
                     width={285}
                     height={244}
@@ -62,7 +62,7 @@ export default function Caregivers() {
                         </p>
                     </div>
                     <Image
-                        src="/caregivers.jpg"
+                        src="/home/caregivers.jpg"
                         alt="caregivers"
                         width={424}
                         height={580}

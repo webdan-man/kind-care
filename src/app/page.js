@@ -1,5 +1,3 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import Hero from "@/components/home/Hero";
 import Health from "@/components/home/Health";
 import Services from "@/components/home/Services";

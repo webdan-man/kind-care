@@ -31,7 +31,7 @@ export const menuItems = [
 
 export default function Header() {
     return (
-        <header className="px-[60px] py-[17px] grid grid-cols-[1fr_2fr_1fr] items-center">
+        <header className="px-[60px] py-[17px] grid grid-cols-[1fr_2fr_1fr] items-center sticky top-0 z-100 bg-[rgba(251,251,249,1)]">
             <div className="flex">
                 <Link href='/'>
                     <Image

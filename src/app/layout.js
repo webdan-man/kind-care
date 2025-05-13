@@ -13,16 +13,21 @@ export const metadata = {
     description: "KindCare",
 };
 
+
+export const viewport = {
+    width: '1440',
+}
+
 export default function RootLayout({ children }) {
     return (
         <html suppressHydrationWarning={true} lang="en">
-        <body className={`${montserrat.variable} antialiased md:subpixel-antialiased`}>
-        <div className="flex flex-col font-[family-name:var(--font-montserrat)] justify-between min-h-screen">
-            <Header />
-            {children}
-            <Footer />
-        </div>
-        </body>
+            <body className={`${montserrat.variable} antialiased md:subpixel-antialiased`}>
+                <div className="flex flex-col font-[family-name:var(--font-montserrat)] justify-between min-h-screen">
+                    <Header />
+                    {children}
+                    <Footer />
+                </div>
+            </body>
         </html>
     );
 }
