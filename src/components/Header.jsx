@@ -1,5 +1,9 @@
+'use client';
+
 import Image from "next/image";
-import Link from 'next/link'
+import Link from 'next/link';
+
+import React from 'react';
 
 export const menuItems = [
     {
@@ -30,8 +34,20 @@ export const menuItems = [
 ]
 
 export default function Header() {
+
+    const [scrolled, setScrolled] = React.useState(false);
+
+    React.useEffect(() => {
+        const onScroll = () => {
+            setScrolled(window.scrollY > 0);
+        };
+
+        window.addEventListener('scroll', onScroll);
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
     return (
-        <header className="px-[60px] py-[17px] grid grid-cols-[1fr_2fr_1fr] items-center sticky top-0 z-100 bg-[rgba(251,251,249,1)]">
+        <header className={`px-[60px] py-[17px] grid grid-cols-[1fr_2fr_1fr] items-center sticky top-0 z-100 bg-[rgba(251,251,249,1)] ${scrolled ? 'border-b border-[#F0F0F0]' : ''}`}>
             <div className="flex">
                 <Link href='/'>
                     <Image
@@ -47,14 +63,14 @@ export default function Header() {
                 <ul className="flex gap-[20px] justify-center">
                     {menuItems.map((item) => (
                         <li key={item.title}>
-                            <Link href={item.href} className="p1-medium hover:underline">{item.title}</Link>
+                            <Link href={item.href} className="p1-medium hover:underline transition-all duration-300">{item.title}</Link>
                         </li>
                     ))}
                 </ul>
             </nav>
             <div className="flex flex-col gap-[4px] items-end">
                 <Link href='tel:+374 43 018 018' className="p3 text-right hover:underline">+374 43 018 018</Link>
-                <p className="p2 text-right">Աշխ. ժամեր 10:00 մինչև 21:00</p>
+                <p className="p2 text-right text-[rgba(107,107,107,1)]">Աշխ. ժամեր 10:00 մինչև 21:00</p>
             </div>
         </header>
     );

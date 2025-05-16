@@ -13,7 +13,7 @@ export default function Breadcrumbs({title}) {
 
     if (!title) {
         return (
-            <div className="w-full max-w-[1440px] px-[16px] mx-auto flex flex-col items-center">
+            <div className="w-full max-w-[1920px] px-[16px] mx-auto flex flex-col items-center">
                 <div className="w-full flex flex-col items-center bg-[rgba(252,243,230,1)] rounded-[30px]">
                     <div className="flex w-full max-w-[1094px] p-[16px] h-[100px] flex-col justify-center">
                         <div className="flex w-full gap-[5px]">
@@ -31,7 +31,7 @@ export default function Breadcrumbs({title}) {
     }
 
     return (
-        <div className="w-full max-w-[1440px] px-[16px] mx-auto mb-[39px]">
+        <div className="w-full max-w-[1920px] px-[16px] mx-auto mb-[39px]">
             <div
                 className="relative w-full bg-[rgba(9,135,237,1)] h-[200px] py-[40px] px-[16px] rounded-[60px] flex flex-col items-center">
                 <div className="flex flex-col w-full max-w-[1094px]">

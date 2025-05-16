@@ -51,7 +51,7 @@ export default function WhyWe() {
 
 
     return (
-        <div className="w-full max-w-[1440px] px-[60px] mx-auto pt-[100px] flex flex-row gap-[112px] justify-center items-start">
+        <div className="w-full max-w-[1920px] px-[60px] mx-auto pt-[100px] flex flex-row gap-[112px] justify-center items-start">
             <div className={"relative after:absolute after:z-0 after:w-[407px] after:h-[580px] after:bg-[rgba(252,243,230,1)] after:rounded-[40px] after:top-[75px] after:-left-[112px]"}>
                 <Image
                     src={'/home/whyWe.jpg'}
@@ -80,7 +80,15 @@ export default function WhyWe() {
                                 }
                                 <p className="p7-medium mt-[6px]">{item.title}</p>
                             </div>
-                            {activeItemId === item.id && <p className="w-full p6 -tracking-[0.48px] text-[rgba(107,107,107,1)] pl-[54px] max-w-[536px]">{item.text}</p>}
+                            <div
+                                className={`max-w-[536px] w-full overflow-hidden transition-all duration-500 ease-in-out ${
+                                    activeItemId === item.id
+                                        ? 'max-h-[500px] opacity-100'
+                                        : 'max-h-0 opacity-0'
+                                }`}
+                            >
+                                <p className="p6 -tracking-[0.48px] text-[rgba(107,107,107,1)] pl-[54px]">{item.text}</p>
+                            </div>
                         </div>
                     ))}
                 </div>

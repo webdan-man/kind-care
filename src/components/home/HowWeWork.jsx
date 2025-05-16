@@ -30,7 +30,7 @@ const items = [
 
 export default function HowWeWork() {
     return (
-        <div className="w-full max-w-[1440px] px-[16px] mx-auto pt-[195px] relative">
+        <div className="w-full max-w-[1920px] px-[16px] mx-auto pt-[195px] relative">
             <div className="absolute z-0 border-t border-r border-b border-t-[rgba(9,135,237,1)] border-b-[rgba(9,135,237,1)] border-r-[rgba(9,135,237,1)] rounded-r-[80px] h-[358px] w-[750px] right-[64px] top-[340px] after:absolute after:rounded-full after:w-[17px] after:h-[17px] after:bg-[rgba(9,135,237,1)] after:-bottom-[8px] after:-left-[8px] before:absolute before:-top-[1px] before:-left-[100%] before:h-[1px] before:w-full before:bg-[rgba(9,135,237,1)]" />
             <h2 className="h2 w-full text-center relative">Մեր աշխատելաձևը</h2>
             <div className="relative mt-[12px] w-full flex gap-[102px] justify-center">

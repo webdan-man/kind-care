@@ -41,7 +41,7 @@ export default function Questions() {
     const [activeItemId, setActiveItemId] = React.useState(null);
 
     return (
-        <div className="w-full max-w-[1440px] px-[60px] pt-[100px] mx-auto flex gap-[41px]">
+        <div className="w-full max-w-[1920px] px-[60px] pt-[100px] mx-auto flex gap-[41px]">
             <div className="flex flex-col w-[625px]">
                 <h2 className="h2 ml-[88px]">Հաճախ <br/>տրվող հարցեր</h2>
                 <div
@@ -57,7 +57,7 @@ export default function Questions() {
             </div>
             <div className="flex flex-col gap-[12px] w-full">
                 {items.map((item) => (
-                    <div key={item.id} className="flex flex-col gap-[20px]">
+                    <div key={item.id} className="flex flex-col">
                         <div
                             onClick={() => setActiveItemId(activeItemId === item.id ? null : item.id)}
                             className="px-[29px] py-[22px] bg-[rgba(9,135,237,0.1)] w-full max-w-[868px] flex gap-[20px] rounded-[24px] justify-between cursor-pointer">
@@ -70,7 +70,15 @@ export default function Questions() {
                                 className={`transition-transform duration-300 ease-in-out ${activeItemId === item.id ? "-rotate-90" : ""}`}
                             />
                         </div>
-                        {activeItemId === item.id && <p className="p7 -tracking-[0.54px] ml-[31px] max-w-[753px] mb-[17px]">{item.text}</p>}
+                        <div
+                            className={`ml-[31px] max-w-[753px] w-full overflow-hidden transition-all duration-500 ease-in-out ${
+                                activeItemId === item.id
+                                    ? 'max-h-[500px] opacity-100'
+                                    : 'max-h-0 opacity-0'
+                            }`}
+                        >
+                            <p className="p7 -tracking-[0.54px] mt-[20px] mb-[17px]">{item.text}</p>
+                        </div>
                     </div>
                 ))}
             </div>

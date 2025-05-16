@@ -37,7 +37,7 @@ const items = [
 
 export default function Health() {
     return (
-        <div className="w-full max-w-[1440px] px-[16px] mx-auto pt-[80px]">
+        <div className="w-full max-w-[1920px] px-[16px] mx-auto pt-[80px]">
             <h3 className="h3 w-full text-center">Մենք կարևորում ենք Ձեր առողջությունը</h3>
             <div className="flex mt-[70px] gap-[25px] justify-center w-full flex-wrap">
                 {items.map((item, i) => (

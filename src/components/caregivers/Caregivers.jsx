@@ -3,23 +3,26 @@ import Image from "next/image";
 export default function Caregivers() {
     return (
         <div className="w-full max-w-[1440px] px-[16px] mx-auto flex flex-col items-center mb-[148px] mt-[48px]">
-            <div className="flex flex-row gap-[70px]">
-                <Image
-                    src="/home/caregiver.png"
-                    alt="caregiver"
-                    width={285}
-                    height={244}
-                    className={"rounded-[40px]"}
-                />
+            <div className="flex flex-row gap-[137px]">
+                <div
+                    className={"relative after:absolute after:z-0 after:w-[417px] after:h-[230px] after:bg-[rgba(252,243,230,1)] after:rounded-[40px] after:top-[54px] after:-left-[65px]"}>
+                    <Image
+                        src="/home/caregiver.png"
+                        alt="caregiver"
+                        width={285}
+                        height={244}
+                        className={"rounded-[40px] z-10 relative"}
+                    />
+                </div>
                 <div className="flex flex-col max-w-[704px] w-full">
                     <h2 className="mt-[8px] h5">Մեր խնամողները՝ <br/>ձեր վստահելի աջ ձեռքը</h2>
                     <p className="leading-[22px] p6 mt-[24px]">«Բարի Խնամք»-ի խնամողները միայն գործ կատարող մարդիկ չեն։ Նրանք հոգատար, ուշադիր, բարեկիրթ և փորձառու մասնագետներ են, ովքեր իրենց ներկայությամբ ապահովում են ոչ միայն ֆիզիկական, այլև հուզական աջակցություն ձեր հարազատին։</p>
                 </div>
             </div>
-            <div className="w-full bg-[rgba(252,243,230,1)] border border-[rgba(233,202,162,1)] rounded-[60px] flex flex-col items-center p-[33px]">
-                <div className="max-w-[1144px] w-full border-l-[rgba(9,135,237,1)] border-l-[6px] pl-[24px]">
+            <div className="relative w-full bg-[rgba(252,243,230,1)] border border-[rgba(233,202,162,1)] rounded-[60px] flex flex-col items-center p-[33px]">
+                <div className="relative before:absolute before:left-0 before:h-full before:w-[6px] before:rounded-full before:bg-[rgba(9,135,237,1)] max-w-[1144px] w-full pl-[24px]">
                     <h3 className="p8-medium mt-[5px]">Խնամողները ունեն՝</h3>
-                    <p className="leading-[22px] mt-[8px] p6">
+                    <p className="leading-[22px] mt-[8px] p6 mb-[11px]">
                         • Ունեն մասնագիտական փորձ տարեցների, պառկած հիվանդների, հիշողության խանգարումներ ունեցողների հետ
                         աշխատանքի մեջ <br/>
                         • Հաճախ ունեն բուժքրոջ կամ բժշկական նախապատրաստություն <br/>
@@ -61,13 +64,17 @@ export default function Caregivers() {
                             Ձեր ընտանիքը կարող է լինել հանգիստ՝ դուք վստահում եք մասնագետի, իսկ մենք վերահսկում ենք ամբողջ գործընթացը։
                         </p>
                     </div>
-                    <Image
-                        src="/home/caregivers.jpg"
-                        alt="caregivers"
-                        width={424}
-                        height={580}
-                        className={"rounded-[40px]"}
-                    />
+                    <div
+                        className={"relative after:absolute after:z-0 after:w-[407px] after:h-[580px] after:bg-[rgba(252,243,230,1)] after:rounded-[40px] after:top-[75px] after:left-[65px]"}>
+
+                        <Image
+                            src="/home/caregivers.jpg"
+                            alt="caregivers"
+                            width={424}
+                            height={580}
+                            className={"rounded-[40px] z-10 relative"}
+                        />
+                    </div>
                 </div>
             </div>
         </div>

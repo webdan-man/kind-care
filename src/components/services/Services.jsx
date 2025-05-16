@@ -46,7 +46,7 @@ const items = [
 
 export default function Services({children, active}) {
     return (
-        <div className="w-full max-w-[1440px] px-[16px] mx-auto flex flex-col items-center mb-[120px]">
+        <div className="w-full max-w-[1920px] px-[16px] mx-auto flex flex-col items-center mb-[120px]">
             <div className="flex flex-row w-full max-w-[1320px] gap-[64px] items-start">
                 <div className="flex flex-col px-[24px] py-[30px] bg-[rgba(252,243,230,1)] rounded-[32px] border border-[rgba(233,202,162,1)] min-w-[384px] sticky top-[128px]">
                     {items.map((item, index) => (
