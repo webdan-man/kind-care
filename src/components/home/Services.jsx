@@ -115,7 +115,7 @@ export default function Services() {
     }, [activeItemId, isAutoChanging]);
 
     return (
-        <div className="w-full max-w-[1920px] px-[16px] mx-auto pt-[60px] flex flex-col items-center">
+        <div className="w-full max-w-[1440px] px-[16px] mx-auto pt-[60px] flex flex-col items-center">
             <div className="flex flex-col w-full max-w-[1064px] items-start">
                 <h2 className="h2">Մեր ծառայությունները</h2>
                 <p className="p6 text-[rgba(107,107,107,1)] mt-[7px]">Այս կարճ հատվածում մենք խնամել ենք
