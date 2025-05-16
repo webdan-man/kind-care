@@ -41,7 +41,7 @@ export default function Questions() {
     const [activeItemId, setActiveItemId] = React.useState(null);
 
     return (
-        <div className="w-full max-w-[1920px] px-[60px] pt-[100px] mx-auto flex gap-[41px]">
+        <div className="w-full max-w-[1440px] px-[60px] pt-[100px] mx-auto flex gap-[41px]">
             <div className="flex flex-col w-[625px]">
                 <h2 className="h2 ml-[88px]">Հաճախ <br/>տրվող հարցեր</h2>
                 <div

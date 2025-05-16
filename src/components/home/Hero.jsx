@@ -15,7 +15,7 @@ export default function Hero() {
                     <Button className="mt-[35px]">Մեր Ծառայությունները</Button>
                 </div>
             </div>
-            <div className="relative  w-full min-w-[704px] max-w-[50%] -ml-[138px] h-[520px] ">
+            <div className="relative  w-full min-w-[704px] max-w-[calc(50%+138px)] -ml-[138px] h-[520px] ">
                 <Image
                     src="/galery/hero.jpg"
                     alt="hero"
