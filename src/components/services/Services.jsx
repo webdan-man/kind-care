@@ -47,8 +47,8 @@ const items = [
 export default function Services({children, active}) {
     return (
         <div className="w-full max-w-[1920px] px-[16px] mx-auto flex flex-col items-center mb-[120px]">
-            <div className="flex flex-row w-full max-w-[1320px] gap-[64px] items-start">
-                <div className="flex flex-col px-[24px] py-[30px] bg-[rgba(252,243,230,1)] rounded-[32px] border border-[rgba(233,202,162,1)] min-w-[384px] sticky top-[128px]">
+            <div className="flex flex-row w-full max-w-[1320px] gap-[64px] items-start max-md:flex-col">
+                <div className="flex flex-col px-[24px] py-[30px] bg-[rgba(252,243,230,1)] rounded-[32px] border border-[rgba(233,202,162,1)] min-w-[384px] sticky max-md:relative max-md:top-0 top-[128px]">
                     {items.map((item, index) => (
                         <Link className={`-tracking-[0.54px] p7-medium w-full px-[24px] py-[16px] rounded-[16px] hover:bg-[rgba(251,217,172,0.4)] flex gap-[20px] justify-between items-center ${active === item.id ? 'bg-[rgba(251,217,172,0.6)]' : 'bg-none'}`} key={item.id} href={item.url}>
                             {item.title}

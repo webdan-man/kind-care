@@ -33,7 +33,7 @@ export default function ContactUs() {
 
     return (
         <div className="relative w-full max-w-[1176px] px-[16px] mx-auto flex flex-col items-center mt-40px">
-            <div className="flex flex-row gap-[61px] w-full">
+            <div className="flex flex-row gap-[61px] w-full max-md:flex-col">
                 <div className="flex flex-col w-full max-w-[584px] ml-[27px] items-start">
                     <p className="p7">
                         Ունե՞ք հարցեր, ցանկանում եք խորհրդատվություն կամ պատրաստ եք պատվիրել խնամք՝ մենք միշտ պատրաստ

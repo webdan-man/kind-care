@@ -41,11 +41,11 @@ export default function Questions() {
     const [activeItemId, setActiveItemId] = React.useState(null);
 
     return (
-        <div className="w-full max-w-[1440px] px-[60px] pt-[100px] mx-auto flex gap-[41px]">
-            <div className="flex flex-col w-[625px]">
-                <h2 className="h2 ml-[88px]">Հաճախ <br/>տրվող հարցեր</h2>
+        <div className="w-full max-w-[1440px] px-[60px] pt-[100px] mx-auto flex gap-[41px] max-md:flex-col max-md:px-[16px]">
+            <div className="flex flex-col w-[625px] max-md:w-full">
+                <h2 className="h2 ml-[88px] max-md:ml-0">Հաճախ <br/>տրվող հարցեր</h2>
                 <div
-                    className={"relative mt-[60px] mr-[71px] after:absolute after:z-0 after:w-[305px] after:h-[357px] after:bg-[rgba(252,243,230,1)] after:rounded-[40px] after:top-[230px] after:-left-[46px]"}>
+                    className={"max-md:hidden relative mt-[60px] mr-[71px] after:absolute after:z-0 after:w-[305px] after:h-[357px] after:bg-[rgba(252,243,230,1)] after:rounded-[40px] after:top-[230px] after:-left-[46px]"}>
                     <Image
                         src="/home/frequently.jpg"
                         alt="frequently"
@@ -71,13 +71,13 @@ export default function Questions() {
                             />
                         </div>
                         <div
-                            className={`ml-[31px] max-w-[753px] w-full overflow-hidden transition-all duration-500 ease-in-out ${
+                            className={`ml-[31px] max-md:ml-[14px] max-w-[753px] w-full overflow-hidden transition-all duration-500 ease-in-out ${
                                 activeItemId === item.id
                                     ? 'max-h-[500px] opacity-100'
                                     : 'max-h-0 opacity-0'
                             }`}
                         >
-                            <p className="p7 -tracking-[0.54px] mt-[20px] mb-[17px]">{item.text}</p>
+                            <p className="p7 -tracking-[0.54px] mt-[20px] mb-[17px] max-md:w-[calc(100%-28px)]">{item.text}</p>
                         </div>
                     </div>
                 ))}

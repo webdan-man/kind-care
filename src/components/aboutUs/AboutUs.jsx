@@ -5,7 +5,7 @@ export default function AboutUs() {
     return (
         <div className="w-full max-w-[1126px] px-[16px] mx-auto flex flex-row mb-[68px]">
             <div className="flex flex-col gap-[34px]">
-                <div className="flex flex-row gap-[64px] items-start">
+                <div className="flex flex-row gap-[64px] items-start max-md:flex-col">
                     <div className="w-full max-w-[584px] flex flex-col">
                         <div className="flex flex-col w-full">
                             <h3 className="h5 mt-[26px]">Մեր պատությունը</h3>
@@ -29,7 +29,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                     <div
-                        className={"relative after:absolute after:z-0 after:w-[407px] after:h-[580px] after:bg-[rgba(252,243,230,1)] after:rounded-[40px] after:top-[75px] after:left-[65px]"}>
+                        className={"relative max-md:after:hidden after:absolute after:z-0 after:w-[407px] after:h-[580px] after:bg-[rgba(252,243,230,1)] after:rounded-[40px] after:top-[75px] after:left-[65px]"}>
                         <Image
                             src="/aboutUs/top.jpg"
                             alt="about us"
@@ -40,7 +40,7 @@ export default function AboutUs() {
                     </div>
 
                 </div>
-                <div className="flex flex-row gap-[17px] items-start">
+                <div className="flex flex-row gap-[17px] items-start max-md:flex-col">
                     <div className="w-full max-w-[584px] flex flex-col">
                         <div className="flex flex-col w-full">
                             <h3 className="h5 mt-[26px]">Մեր նպատակը</h3>

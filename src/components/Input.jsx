@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Input({
+export default function     Input({
       label,
       name,
       value,
@@ -19,12 +19,10 @@ export default function Input({
                 name={name}
                 value={value}
                 onInvalid={() => {
-                    console.log(123)
                     setInvalid(true)
                 }}
                 onChange={e => {
                     onChange(e)
-                    console.log(321)
                     setInvalid(false)
                 }}
                 required={required}

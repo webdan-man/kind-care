@@ -31,7 +31,7 @@ export default function Breadcrumbs({title}) {
     }
 
     return (
-        <div className="w-full max-w-[1920px] px-[16px] mx-auto mb-[39px]">
+        <div className="w-full max-w-[1920px] px-[16px] mx-auto mb-[39px] max-md:px-[8px]">
             <div
                 className="relative w-full bg-[rgba(9,135,237,1)] h-[200px] py-[40px] px-[16px] rounded-[60px] flex flex-col items-center">
                 <div className="flex flex-col w-full max-w-[1094px]">

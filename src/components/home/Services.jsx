@@ -116,14 +116,13 @@ export default function Services() {
 
     return (
         <div className="w-full max-w-[1440px] px-[16px] mx-auto pt-[60px] flex flex-col items-center">
-            <div className="flex flex-col w-full max-w-[1064px] items-start">
+            <div className="flex flex-col w-full max-w-[1064px] items-start max-md:px-[19px]">
                 <h2 className="h2">Մեր ծառայությունները</h2>
-                <p className="p6 text-[rgba(107,107,107,1)] mt-[7px]">Այս կարճ հատվածում մենք խնամել ենք
-                    ավելի քան 1000 մարդկանց և տարեցների օգնել ապաքինվել։</p>
+                <p className="p6 text-[rgba(107,107,107,1)] mt-[7px]">Հոգատար և վստահելի աջակցություն Ձեր հարազատին՝ ապահով միջավայրում, իր իսկ տանը։</p>
             </div>
             <div
-                className="mt-[39px] bg-[rgba(252,243,230,1)] rounded-[60px] border border-[rgba(233,202,162,1)] px-[16px] py-[60px] flex flex-col w-full items-center min-h-[704px]">
-                <div className="flex w-full max-w-[1096px] items-start gap-[112px]">
+                className="mt-[39px] bg-[rgba(252,243,230,1)] rounded-[60px] border border-[rgba(233,202,162,1)] px-[16px] max-md:px-[12px] py-[60px] flex flex-col w-full items-center min-h-[704px]">
+                <div className="flex w-full max-w-[1096px] items-start gap-[112px] max-md:flex-col max-md:gap-[26px]">
                     <div className="flex flex-col w-full max-w-[336px]">
                         {items.map(item => (
                             <p onClick={() => {
@@ -145,14 +144,16 @@ export default function Services() {
                             </p>
                         ))}
                     </div>
-                    <div key={activeItem.id} className="animate-opacity">
-                        <Image
-                            src={activeItem.content.img.url}
-                            alt={activeItem.content.img.alt}
-                            width={648}
-                            height={220}
-                            className={"rounded-[40px]"}
-                        />
+                    <div key={activeItem.id} className="animate-opacity max-md:w-full max-md:px-[22px]">
+                        <div className='flex w-[648px] h-[220px] max-md:w-full relative'>
+                            <Image
+                                src={activeItem.content.img.url}
+                                alt={activeItem.content.img.alt}
+                                fill
+                                objectFit="cover"
+                                className={"rounded-[40px]"}
+                            />
+                        </div>
                         <div className="w-full pl-[24px]">
                             <h3 className="h3 mt-[30px]">{activeItem.title}</h3>
                             <p className="p7 mt-[13px] max-w-[600px]">{activeItem.content.text}</p>

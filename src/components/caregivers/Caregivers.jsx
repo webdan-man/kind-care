@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function Caregivers() {
     return (
         <div className="w-full max-w-[1440px] px-[16px] mx-auto flex flex-col items-center mb-[148px] mt-[48px]">
-            <div className="flex flex-row gap-[137px]">
+            <div className="flex flex-row gap-[137px] max-md:flex-col">
                 <div
-                    className={"relative after:absolute after:z-0 after:w-[417px] after:h-[230px] after:bg-[rgba(252,243,230,1)] after:rounded-[40px] after:top-[54px] after:-left-[65px]"}>
+                    className={"relative max-md:after:hidden after:absolute after:z-0 after:w-[417px] after:h-[230px] after:bg-[rgba(252,243,230,1)] after:rounded-[40px] after:top-[54px] after:-left-[65px]"}>
                     <Image
                         src="/home/caregiver.png"
                         alt="caregiver"
@@ -32,7 +32,7 @@ export default function Caregivers() {
                 </div>
             </div>
             <div className="flex flex-col gap-[34px]">
-                <div className="flex flex-row mt-[38px] gap-[64px] items-start">
+                <div className="flex flex-row mt-[38px] gap-[64px] items-start max-md:flex-col">
                     <div className="flex flex-col mt-[26px] w-full max-w-[584px]">
                         <h2 className="h5">Ի՞նչ է անում խնամողը</h2>
                         <p className="mt-[24px] p7">
@@ -65,8 +65,7 @@ export default function Caregivers() {
                         </p>
                     </div>
                     <div
-                        className={"relative after:absolute after:z-0 after:w-[407px] after:h-[580px] after:bg-[rgba(252,243,230,1)] after:rounded-[40px] after:top-[75px] after:left-[65px]"}>
-
+                        className={"relative max-md:after:hidden after:absolute after:z-0 after:w-[407px] after:h-[580px] after:bg-[rgba(252,243,230,1)] after:rounded-[40px] after:top-[75px] after:left-[65px]"}>
                         <Image
                             src="/home/caregivers.jpg"
                             alt="caregivers"

@@ -47,19 +47,18 @@ export default function Header() {
     }, []);
 
     return (
-        <header className={`px-[60px] py-[17px] grid grid-cols-[1fr_2fr_1fr] items-center sticky top-0 z-100 bg-[rgba(251,251,249,1)] ${scrolled ? 'border-b border-[#F0F0F0]' : ''}`}>
+        <header className={`px-[60px] py-[17px] max-md:px-[20px] max-md:py-[26px] max-md:flex max-md:items-center max-md:justify-between grid grid-cols-[1fr_2fr_1fr] items-center sticky top-0 z-100 bg-[rgba(251,251,249,1)] ${scrolled ? 'border-b border-[#F0F0F0]' : ''}`}>
             <div className="flex">
-                <Link href='/'>
+                <Link href='/' className="relative w-[166px] max-md:w-[125px] max-md:h-[28px] h-[37px]">
                     <Image
+                        fill
                         src="/logo.svg"
                         alt="KindCare logo"
-                        width={166}
-                        height={37}
                         priority
                     />
                 </Link>
             </div>
-            <nav>
+            <nav className="max-md:hidden">
                 <ul className="flex gap-[20px] justify-center">
                     {menuItems.map((item) => (
                         <li key={item.title}>
@@ -70,7 +69,7 @@ export default function Header() {
             </nav>
             <div className="flex flex-col gap-[4px] items-end">
                 <Link href='tel:+374 43 018 018' className="p3 text-right hover:underline">+374 43 018 018</Link>
-                <p className="p2 text-right text-[rgba(107,107,107,1)]">Աշխ. ժամեր 10:00 մինչև 21:00</p>
+                <p className="p2 text-right text-[rgba(107,107,107,1)] max-md:hidden">Աշխ. ժամեր 10:00 մինչև 21:00</p>
             </div>
         </header>
     );
