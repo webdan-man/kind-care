@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
+import GallerySlider from "@/components/GallerySlider";
 
 const items = [
     {
@@ -51,15 +52,13 @@ export default function WhyWe() {
 
 
     return (
-        <div className="w-full max-w-[1920px] px-[60px] max-md:px-[35px] mx-auto pt-[100px] flex flex-row gap-[112px] max-md:gap-[40px] justify-center items-start max-md:flex-col">
+        <div className="max-md:pt-[85px] w-full max-w-[1920px] px-[60px] max-md:px-[35px] mx-auto pt-[100px] flex flex-row gap-[112px] max-md:gap-[40px] justify-center items-start max-md:flex-col">
             <div className={"max-md:order-1 max-md:after:hidden relative after:absolute after:z-0 after:w-[407px] after:h-[580px] after:bg-[rgba(252,243,230,1)] after:rounded-[40px] after:top-[75px] after:-left-[112px]"}>
-                <Image
-                    src={'/home/whyWe.jpg'}
-                    alt={''}
-                    width={424}
-                    height={580}
-                    className={"rounded-[40px] z-10 relative"}
-                />
+                <GallerySlider
+                    progressBarClassName={"bottom-[69px] left-[50%] -ml-[40%] w-[80%]"}
+                    imageClassName={`rounded-[40px] z-10 relative`}
+                    className={`relative w-[424px] h-[580px]`}
+                    images={['/home/whyChooseUs/1.png', '/home/whyChooseUs/2.png', '/home/whyChooseUs/3.png', '/home/whyChooseUs/4.png']}/>
             </div>
             <div className="flex flex-col gap-[35px]">
                 <h2 className="h2">Ինչու են մեզ ընտրում՝</h2>

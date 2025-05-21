@@ -22,8 +22,8 @@ export default function Footer() {
                     <p className="p2 mt-[8px] text-[rgba(107,107,107,1)]">Աշխ. ժամեր 10:00 մինչև 21:00</p>
                     <Link className="p5 mt-[15px] hover:underline" href="mailto:info@xnamq.am">info@xnamq.am</Link>
                 </div>
-                <div className="flex flex-col justify-between items-end max-md:items-start">
-                    <div className="flex flex-col items-end">
+                <div className="flex flex-col justify-between items-end max-md:items-start max-md:mt-[36px]">
+                    <div className="flex flex-col items-end max-md:items-start">
                         <nav>
                             <ul className="flex gap-[20px] justify-center max-md:flex-col">
                                 {menuItems.map((item) => (
@@ -33,7 +33,7 @@ export default function Footer() {
                                 ))}
                             </ul>
                         </nav>
-                        <div className="flex gap-[30px] items-center mt-[28px] max-md:flex-col">
+                        <div className="flex gap-[30px] items-center mt-[28px] max-md:flex-col max-md:mt-[46px] max-md:gap-[17px] max-md:items-start">
                             <p className="p1">Հետևեք մեզ սոց. կայքերում՝</p>
                             <div className="flex gap-[8px]">
                                 {[
@@ -53,17 +53,17 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                    <Link href='/'>
+                    <Link href='/' className="max-md:mt-[38px]">
                         <Image
                             src="/massiv.svg"
-                            alt="Instagram"
+                            alt="massiv"
                             width={136}
                             height={44}
                         />
                     </Link>
                 </div>
             </div>
-            <div className="bg-[rgba(40,40,40,1)] py-[32px] w-full px-[155px] max-md:px-[30px]">
+            <div className="bg-[rgba(40,40,40,1)] py-[32px] w-full px-[155px] max-md:px-[30px] max-md:py-[24px]">
                 <p className="p2 text-[rgba(255,255,255,1)]">© 2025 “Բարի Խնամք” / “Սերգեյ Ասատուրյան” ԱՁ: Բոլոր
                     իրավունքները պաշտպանված են</p>
             </div>

@@ -37,9 +37,9 @@ const items = [
 
 export default function Health() {
     return (
-        <div className="w-full max-w-[1920px] px-[16px] mx-auto pt-[80px]">
+        <div className="w-full max-w-[1920px] px-[16px] mx-auto pt-[80px] max-md:pt-[60px]">
             <h3 className="h3 w-full text-center">Մենք կարևորում ենք Ձեր առողջությունը</h3>
-            <div className="flex mt-[70px] gap-[25px] justify-center w-full flex-wrap">
+            <div className="flex mt-[70px] gap-[25px] justify-center w-full flex-wrap max-md:mt-[40px]">
                 {items.map((item, i) => (
                     <div key={item.img.src} className="flex gap-[18px] flex-1 items-start min-w-[280px] max-w-[333px]">
                         <Image

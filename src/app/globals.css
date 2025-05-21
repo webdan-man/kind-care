@@ -5,6 +5,18 @@
   --foreground: rgba(40, 40, 40, 1);
 }
 
+@keyframes progressBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.progressBar {
+  animation: progressBar 5s linear forwards;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -193,4 +205,19 @@ input {
   .h1 {
     font-size: 30px;
   }
+
+  .menu-font.p1-medium {
+    font-size: 31px;
+  }
+
+  .h3, .h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+  }
+
+  .p6 {
+    font-size: 14px;
+  }
+
 }

@@ -117,7 +117,7 @@ export default function Services() {
     return (
         <div className="w-full max-w-[1440px] px-[16px] mx-auto pt-[60px] flex flex-col items-center">
             <div className="flex flex-col w-full max-w-[1064px] items-start max-md:px-[19px]">
-                <h2 className="h2">Մեր ծառայությունները</h2>
+                <h2 className="h2 max-md:w-full max-md:text-center">Մեր ծառայությունները</h2>
                 <p className="p6 text-[rgba(107,107,107,1)] mt-[7px]">Հոգատար և վստահելի աջակցություն Ձեր հարազատին՝ ապահով միջավայրում, իր իսկ տանը։</p>
             </div>
             <div

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import GallerySlider from "@/components/GallerySlider";
 
 export default function AboutUs() {
     return (
@@ -30,13 +31,11 @@ export default function AboutUs() {
                     </div>
                     <div
                         className={"relative max-md:after:hidden after:absolute after:z-0 after:w-[407px] after:h-[580px] after:bg-[rgba(252,243,230,1)] after:rounded-[40px] after:top-[75px] after:left-[65px]"}>
-                        <Image
-                            src="/aboutUs/top.jpg"
-                            alt="about us"
-                            width={424}
-                            height={580}
-                            className="rounded-[40px] z-10 relative"
-                        />
+                        <GallerySlider
+                            progressBarClassName={"bottom-[69px] left-[50%] -ml-[40%] w-[80%]"}
+                            imageClassName={`rounded-[40px] z-10 relative`}
+                            className={`relative w-[424px] h-[580px]`}
+                            images={['/aboutUs/gallery/1.png', '/aboutUs/gallery/2.png', '/aboutUs/gallery/3.png', '/aboutUs/gallery/4.png', '/aboutUs/gallery/5.png']}/>
                     </div>
 
                 </div>
