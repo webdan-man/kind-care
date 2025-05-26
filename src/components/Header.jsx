@@ -84,7 +84,7 @@ export default function Header() {
                         onClick={() => {
                             setOpen(prevState => !prevState)
                         }}
-                        className="hidden max-sm:flex"
+                        className="hidden max-md:flex"
                     >
                         <Image
                             src={'/close.svg'}
@@ -105,7 +105,7 @@ export default function Header() {
             </div>
             <Links className="max-md:hidden"/>
             {!open && (
-                <div className="flex">
+                <div className="flex justify-end">
                     <div className="flex flex-col gap-[4px] items-end">
                     <Link href='tel:+374 43 018 018' className="p3 text-right hover:underline">+374 43 018 018</Link>
                         <p className="p2 text-right text-[rgba(107,107,107,1)] max-md:hidden">Աշխ. ժամեր 10:00 մինչև
@@ -115,7 +115,7 @@ export default function Header() {
                         onClick={() => {
                             setOpen(prevState => !prevState)
                         }}
-                        className="hidden max-sm:flex ml-[23px]"
+                        className="hidden max-md:flex ml-[23px]"
                     >
                         <Image
                             src={'/menu.svg'}

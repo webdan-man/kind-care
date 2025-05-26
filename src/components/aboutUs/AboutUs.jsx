@@ -9,7 +9,7 @@ export default function AboutUs() {
                 <div className="flex flex-row gap-[64px] items-start max-md:flex-col">
                     <div className="w-full max-w-[584px] flex flex-col">
                         <div className="flex flex-col w-full">
-                            <h3 className="h5 mt-[26px]">Մեր պատությունը</h3>
+                            <h3 className="h5 mt-[26px]">Մեր պատմությունը</h3>
                             <p className="p7 mt-[24px]">Իհարկե, տարեց կամ տարեց թոշակառու ունեցող ընտանիքի բոլոր
                                 անդամները
                                 հնարավորություն չունեն հրաժարվել գումար վաստակելուց և մնալ տանը՝ նրան խնամելու համար։

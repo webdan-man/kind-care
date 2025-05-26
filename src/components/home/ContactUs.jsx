@@ -33,11 +33,11 @@ export default function ContactUs() {
     }
 
     return (
-        <div className="relative w-full max-w-[1920px] px-[16px] mt-[73px] mx-auto flex items-center flex-col justify-center">
+        <div className="relative w-full max-w-[1920px] px-[64px] max-md:px-[16px] mt-[73px] mx-auto flex items-center flex-col justify-center">
             <p className="p5">Ունե՞ք դեռ հարցեր</p>
             <h2 className="h5 mt-[18px]">Թողեք հայտ, և մենք կկապնվենք ձեզ հետ!</h2>
             <div
-                className="mt-[40px] relative bg-[rgba(9,135,237,1)] rounded-[60px] w-full max-w-[1316px] py-[65px] flex flex-col items-center">
+                className="mt-[40px] relative bg-[rgba(9,135,237,1)] rounded-[60px] w-full py-[65px] flex flex-col items-center">
                 <div className="absolute w-[453px] h-[437px] max-md:w-full absolute right-0 bottom-0 z-0">
                     <Image
                         src="/elefant_big.svg"
