@@ -18,6 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html suppressHydrationWarning={true} lang="en">
+        <body className={`${montserrat.variable} antialiased md:subpixel-antialiased`}>
         {/* Google tag (gtag.js) */}
         <Script
             src="https://www.googletagmanager.com/gtag/js?id=G-2TW7QE1H6D"
@@ -37,7 +38,6 @@ export default function RootLayout({ children }) {
         `,
             }}
         />
-        <body className={`${montserrat.variable} antialiased md:subpixel-antialiased`}>
         <DynamicViewportSetter/>
         <div className="flex flex-col font-[family-name:var(--font-montserrat)] justify-between min-h-screen">
             <Header/>
