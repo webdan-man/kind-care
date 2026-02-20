@@ -11,8 +11,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-    title: "KindCare",
-    description: "KindCare",
+    title: "Բարի Խնամք - Տնային Խնամքի Կազմակերպություն",
+    description: "Բարի Խնամքը ապահովում է անվտանգ և հետևողական խնամք ձեր սիրելիի համար, քանի որ նրանք ծերանում են, որը մատուցվում է տանը՝ հարմարավետ և թափանցիկ:",
 };
 
 export default function RootLayout({ children }) {
