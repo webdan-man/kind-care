@@ -12,7 +12,7 @@ export default function Footer() {
                         <Image
                             src="/logo.svg"
                             alt="KindCare logo"
-                            width={166}
+                            width={94}
                             height={37}
                         />
                     </Link>

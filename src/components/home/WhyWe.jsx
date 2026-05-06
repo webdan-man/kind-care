@@ -57,7 +57,7 @@ export default function WhyWe() {
                 <GallerySlider
                     progressBarClassName={"bottom-[69px] left-[50%] -ml-[40%] w-[80%]"}
                     imageClassName={`rounded-[40px] z-10 relative`}
-                    className={`relative w-[424px] h-[580px]`}
+                    className={`relative min-w-[calc(100vw-70px)] w-full max-w-[424px] h-[580px]`}
                     images={['/home/whyChooseUs/1.png', '/home/whyChooseUs/2.png', '/home/whyChooseUs/3.png', '/home/whyChooseUs/4.png']}/>
             </div>
             <div className="flex flex-col gap-[35px]">

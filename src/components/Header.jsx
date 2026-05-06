@@ -33,13 +33,13 @@ export const menuItems = [
     }
 ]
 
-const Links = ({className}) => {
+const Links = ({className, onClick}) => {
     return (
         <nav className={`${className} max-md:px-[20px]`}>
             <ul className="flex gap-[20px] justify-center max-md:flex-col max-md:items-center">
                 {menuItems.map((item) => (
                     <li key={item.title}>
-                        <Link href={item.href}
+                        <Link href={item.href} onClick={onClick}
                               className="p1-medium hover:underline transition-all duration-300 max-md:text-[rgba(255,255,255,1)] menu-font">{item.title}</Link>
                     </li>
                 ))}
@@ -72,7 +72,7 @@ export default function Header() {
             className={`px-[60px] py-[17px] max-md:flex max-md:items-center max-md:justify-between grid grid-cols-[1fr_2fr_1fr] items-center top-0 z-100 ${scrolled ? 'border-b border-[#F0F0F0]' : ''} ${open ? 'bg-[rgba(9,135,237,1)] fixed top-0 left-0 h-full w-full max-md:p-0' : 'max-md:px-[20px] max-md:py-[26px] bg-[rgba(251,251,249,1)] sticky'}`}>
             <div className={`${open ? 'w-full h-full' : ''} flex flex-col justify-between`}>
                 <div className={`${open ? 'pt-[24px] px-[20px]' : ''} flex justify-between`}>
-                    <Link href='/' className="relative w-[166px] max-md:w-[125px] max-md:h-[28px] h-[37px]">
+                    <Link onClick={() => setOpen(false)} href='/' className="relative w-[94px] max-md:w-[72px] max-md:h-[28px] h-[37px]">
                         <Image
                             fill
                             src={open ? "/logo_small_white.svg" : "/logo.svg"}
@@ -94,7 +94,7 @@ export default function Header() {
                         />
                     </button>
                 </div>
-                {open && <Links />}
+                {open && <Links onClick={() => setOpen(false)}/>}
                 <div className={`${open ? 'flex flex-col' : 'hidden'} flex-col text-[rgba(255,255,255,1)] items-center bg-[rgba(0,107,193,1)] h-[215px] p-[20xp] justify-center`}>
                     <p className="p1">Մեզ հետ կարող եք կապնվել՝</p>
                     <Link className="p4-medium mt-[16px] hover:underline leading-[41px]" href="tel:+374 43 018 018">+374 43 018 018</Link>
@@ -103,7 +103,7 @@ export default function Header() {
                     <Image src={'/elefant_big.svg'} alt={'Logo'} fill />
                 </div>
             </div>
-            <Links className="max-md:hidden"/>
+            <Links onClick={() => setOpen(false)} className="max-md:hidden"/>
             {!open && (
                 <div className="flex justify-end">
                     <div className="flex flex-col gap-[4px] items-end">
