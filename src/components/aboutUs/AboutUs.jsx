@@ -34,7 +34,7 @@ export default function AboutUs() {
                         <GallerySlider
                             progressBarClassName={"bottom-[69px] left-[50%] -ml-[40%] w-[80%]"}
                             imageClassName={`rounded-[40px] z-10 relative`}
-                            className={`relative min-w-[calc(100vw-70px)] w-full max-w-[424px] h-[580px]`}
+                            className={`relative max-md:min-w-[calc(100vw-70px)] max-md:w-full max-md:max-w-[424px] w-[424px] h-[580px]`}
                             images={['/aboutUs/gallery/1.png', '/aboutUs/gallery/2.png', '/aboutUs/gallery/3.png', '/aboutUs/gallery/4.png', '/aboutUs/gallery/5.png']}/>
                     </div>
 
