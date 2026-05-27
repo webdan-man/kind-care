@@ -50,7 +50,6 @@ const items = [
 export default function WhyWe() {
     const [activeItemId, setActiveItemId] = React.useState(null);
 
-
     return (
         <div className="max-md:pt-[85px] w-full max-w-[1920px] px-[60px] max-md:px-[35px] mx-auto pt-[100px] flex flex-row gap-[112px] max-md:gap-[40px] justify-center items-start max-md:flex-col">
             <div className={"max-md:order-1 max-md:after:hidden relative after:absolute after:z-0 after:w-[407px] after:h-[580px] after:bg-[rgba(252,243,230,1)] after:rounded-[40px] after:top-[75px] after:-left-[112px]"}>
