@@ -3,8 +3,24 @@ WORKDIR /app
 
 # deps
 FROM base AS deps
+# Coolify builders occasionally drop TLS to registry.npmjs.org (ECONNRESET).
+# --prefer-offline is useless here: a fresh image has an empty npm cache.
+ENV NPM_CONFIG_FETCH_RETRIES=5 \
+    NPM_CONFIG_FETCH_RETRY_MINTIMEOUT=20000 \
+    NPM_CONFIG_FETCH_RETRY_MAXTIMEOUT=120000 \
+    NPM_CONFIG_FETCH_TIMEOUT=300000
 COPY package.json package-lock.json ./
-RUN npm ci --no-audit --no-fund --prefer-offline
+RUN set -eux; \
+    for i in 1 2 3 4 5; do \
+      if npm ci --no-audit --no-fund; then \
+        exit 0; \
+      fi; \
+      echo "npm ci failed (attempt $i/5), retrying..."; \
+      if [ "$i" -eq 5 ]; then \
+        exit 1; \
+      fi; \
+      sleep $((i * 8)); \
+    done
 
 # build
 FROM base AS builder
